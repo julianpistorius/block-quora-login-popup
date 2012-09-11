@@ -24,6 +24,6 @@
       , "default_popup" : "popup.html"
     }
   , "homepage_url": "https://github.com/niftylettuce/block-quora-login-popup"
-  , "content_security_policy" : "script-src 'self' https://ssl.google-analytics.com https://platform.twitter.com https://connect.facebook.net; object-src 'self'"
+  , "content_security_policy" : "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
   , "update_url": "http://clients2.google.com/service/update2/crx"
 }
