@@ -1,0 +1,29 @@
+{
+    "name" : "Block Quora Login Popup"
+  , "version" : "0.0.1"
+  , "manifest_version": 2
+  , "description" : "Automatically block the Quora login popup."
+  , "background" : {
+        "scripts" : [ "google-analytics.js" ]
+      , "persistent" : false
+    }
+  , "icons": { "128": "icon-128x128.png", "48": "icon-48x48.png", "16": "icon-16x16.png" }
+  , "content_scripts" : [{
+      "all_frames" : true,
+      "js" : [ "jquery.min.js", "remove.js" ],
+      "matches" : [
+          "http://quora.com/*"
+        , "https://quora.com/*"
+        , "http://www.quora.com/*"
+        , "https://www.quora.com/*"
+      ]
+    }]
+  , "browser_action": {
+        "default_title" : "Block Quora Login Popup"
+      , "default_icon" : "icon-19x19.png"
+      , "default_popup" : "popup.html"
+    }
+  , "homepage_url": "https://github.com/niftylettuce/block-quora-login-popup"
+  , "content_security_policy" : "script-src 'self' https://ssl.google-analytics.com https://platform.twitter.com https://connect.facebook.net; object-src 'self'"
+  , "update_url": "http://clients2.google.com/service/update2/crx"
+}
