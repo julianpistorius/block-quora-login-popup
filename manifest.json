@@ -1,6 +1,6 @@
 {
     "name" : "Block Quora Login Popup"
-  , "version" : "0.0.2"
+  , "version" : "0.0.3"
   , "manifest_version": 2
   , "description" : "Automatically block the Quora login popup."
   , "background" : {
@@ -10,7 +10,7 @@
   , "icons": { "128": "icon-128x128.png", "48": "icon-48x48.png", "16": "icon-16x16.png" }
   , "content_scripts" : [{
       "all_frames" : true,
-      "js" : [ "jquery.min.js", "remove.js" ],
+      "js" : [ "block.js" ],
       "matches" : [
           "http://quora.com/*"
         , "https://quora.com/*"

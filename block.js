@@ -9,20 +9,18 @@
 // * Author: [@niftylettuce](https://twitter.com/#!/niftylettuce)
 // * Source: <https://github.com/niftylettuce/block-quora-login-popup>
 
-// # remove
+// # block
 
-;(function($) {
+if (window.location.search === '')
+  window.location = window.location.origin + window.location.pathname + '?ref=fb';
 
-  remove();
-  setInterval(remove, 5000);
+;(function block() {
 
-  function remove() {
-    // could have searched for _fb prefix (or) simply 'div' -- but we want to prevent it always :)
-    $('*').filter(fixed).remove();
-  }
+  var $modal = document.getElementsByClassName('modal_signup_background');
 
-  function fixed() {
-    return $(this).css('position') === 'fixed';
-  }
+  if ($modal.length === 0)
+    return
 
-})(jQuery);
+  $modal[0].parentNode.parentNode.removeChild($modal[0].parentNode);
+
+})();
