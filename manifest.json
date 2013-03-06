@@ -1,6 +1,6 @@
 {
     "name" : "Block Quora Login Popup"
-  , "version" : "0.0.3"
+  , "version" : "0.0.4"
   , "manifest_version": 2
   , "description" : "Automatically block the Quora login popup."
   , "background" : {
