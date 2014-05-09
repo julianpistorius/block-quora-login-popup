@@ -1,5 +1,5 @@
 
-# Block Quora Login Popup <sup>0.0.4</sup>
+# Block Quora Login Popup <sup>0.0.5</sup>
 
 Automatically block the Quora login popup.
 
