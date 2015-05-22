@@ -1,18 +1,18 @@
 {
-  "name": "block-quora-login-popup",
+  "name": "block-quora-login-popup-custom",
   "private": true,
-  "version": "0.0.5",
-  "description" : "Automatically block the Quora login popup.",
+  "version": "0.0.6",
+  "description" : "Automatically block the Quora login popup. (Custom)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/niftylettuce/block-quora-login-popup.git"
+    "url": "git://github.com/julianpistorius/block-quora-login-popup.git"
   },
   "author": "Nick Baugh <niftylettuce@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/niftylettuce/block-quora-login-popup/issues"
   },
-  "homepage": "https://github.com/niftylettuce/block-quora-login-popup",
+  "homepage": "https://github.com/julianpistorius/block-quora-login-popup",
   "dependencies": {
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-clean": "^0.5.0",
